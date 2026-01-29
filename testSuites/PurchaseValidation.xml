@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Product Purchase">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+    <test name="Test: Purchase Validation">
+        <classes>
+            <class name="test.tests.E2E_SubmitOrderTest"/>
+        </classes>
+    </test>
+    <test name="Test: UI Error Validations">
+        <classes>
+            <class name="test.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="EcommerceApp Validations">
+    <listeners>
+        <listener class-name="test.testComponents.Listeners"/>
+    </listeners>
+
+    <test name="Test: E2E_Test" >
+        <classes>
+            <class name="test.tests.E2E_SubmitOrderTest"/>
+        </classes>
+    </test>
+    <test name="Test: UI Error Validations">
+        <classes>
+            <class name="test.tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+</suite>
