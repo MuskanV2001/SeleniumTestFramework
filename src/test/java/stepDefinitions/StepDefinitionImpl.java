@@ -18,6 +18,10 @@ public class StepDefinitionImpl extends BaseTest {
     public CartPo cartPg;
     public ConfirmationPo confirmationPg;
 
+
+    //All the code within each step definition is fetched from the E2E_SubmitOrderTest java class file
+
+
     @Given("I landed on Ecommerce Page")
     public void I_landed_on_EcommercePage() throws IOException {
         loginPage = launchApplication();
