@@ -30,6 +30,7 @@ public class StandaloneTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com");
         System.out.println(driver.getTitle());
+        System.out.println("This is the Standalone Test");
         extent.flush();
     }
 }
