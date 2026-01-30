@@ -22,11 +22,14 @@ public class CheckoutPo extends AbstractComponents {
         this.a =  new Actions(driver);
     }
 
-    @FindBy(xpath = "//input[@placeholder='Select Country']") WebElement countryBtn;
-    @FindBy(css = ".ta-item:nth-of-type(2)") WebElement country;
-    @FindBy(xpath = "//*[@class='actions']/a") WebElement placeOrder;
+    @FindBy(xpath = "//input[@placeholder='Select Country']")
+    private WebElement countryBtn;
+    @FindBy(css = ".ta-item:nth-of-type(2)")
+    private WebElement country;
+    @FindBy(xpath = "//*[@class='actions']/a")
+    private WebElement placeOrder;
 
-    By countryRes = By.cssSelector(".ta-results");
+    private final By countryRes = By.cssSelector(".ta-results");
 
     public void selectCountry(String countryName){
         a.sendKeys(countryBtn,countryName).build().perform();

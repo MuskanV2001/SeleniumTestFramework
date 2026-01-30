@@ -22,13 +22,14 @@ public class ProductCataloguePo extends AbstractComponents {
         this.a = new Actions(driver);
     }
 
-    @FindBy(xpath = "//div[contains(@class,'mb-3')]") List<WebElement> products;
+    @FindBy(xpath = "//div[contains(@class,'mb-3')]")
+    private List<WebElement> products;
 
-    By productsBy = By.xpath("//div[contains(@class,'mb-3')]");
-    By productNameBy = By.xpath(".//h5/b");
-    By addToCartBy = By.xpath(".//button[text()=' Add To Cart']");
-    By addedToCart = By.cssSelector("#toast-container");
-    By spinner = By.cssSelector(".ngx-spinner-overlay");
+    private final By productsBy = By.xpath("//div[contains(@class,'mb-3')]");
+    private final By productNameBy = By.xpath(".//h5/b");
+    private final By addToCartBy = By.xpath(".//button[text()=' Add To Cart']");
+    private final By addedToCart = By.cssSelector("#toast-container");
+    private final By spinner = By.cssSelector(".ngx-spinner-overlay");
 
     public List<WebElement> getProductsList(){
         waitForElementToAppear(productsBy);

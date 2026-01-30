@@ -22,10 +22,12 @@ public class CartPo extends AbstractComponents {
         this.a = new Actions(driver);
     }
 
-    @FindBy(xpath = "//*[contains(@class,'cartWrap')]") List<WebElement> cartItems;
-    @FindBy(xpath = "//button[text()='Checkout']") WebElement checkout;
+    @FindBy(xpath = "//*[contains(@class,'cartWrap')]")
+    private List<WebElement> cartItems;
+    @FindBy(xpath = "//button[text()='Checkout']")
+    private WebElement checkout;
 
-    By itemName = By.xpath(".//h3");
+    private final By itemName = By.xpath(".//h3");
 
     public boolean cartItemMatch(String productName){
         cartItems.forEach(this::waitForElementToAppear);

@@ -18,7 +18,8 @@ public class OrdersPo extends AbstractComponents {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "tr td:nth-child(3)") List<WebElement> itemNames;
+    @FindBy(css = "tr td:nth-child(3)")
+    private List<WebElement> itemNames;
 
 
     public boolean verifyOrderDisplayed(String productName){

@@ -23,10 +23,14 @@ public class LoginPo extends AbstractComponents {
         this.a = new Actions(driver);
     }
 
-    @FindBy(id="userEmail") WebElement userEmail;
-    @FindBy(css="#userPassword") WebElement userPassword;
-    @FindBy(name="login") WebElement submit;
-    @FindBy(css="[class*='flyInOut']") WebElement incorrectErrorMsg;
+    @FindBy(id="userEmail")
+    private WebElement userEmail;
+    @FindBy(css="#userPassword")
+    private WebElement userPassword;
+    @FindBy(name="login")
+    private WebElement submit;
+    @FindBy(css="[class*='flyInOut']")
+    private WebElement incorrectErrorMsg;
 
     public void gotoLogin(){
         driver.get("https://rahulshettyacademy.com/client");

@@ -15,8 +15,10 @@ public class ConfirmationPo extends AbstractComponents {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath="//*[text()=' Thankyou for the order. ']") WebElement confirmMsg;
-    @FindBy(xpath="//tr[contains(@class,'line-item')]/td[2]//div[@class='title']" ) WebElement productName;
+    @FindBy(xpath="//*[text()=' Thankyou for the order. ']")
+    private WebElement confirmMsg;
+    @FindBy(xpath="//tr[contains(@class,'line-item')]/td[2]//div[@class='title']" )
+    private WebElement productName;
 
     public boolean confirm(){
         return confirmMsg.isDisplayed();
