@@ -51,7 +51,7 @@ public class E2E_SubmitOrderTest extends BaseTest {
     public Object[][] getData(){
         return new Object[][] {
                 {"muskan01lko@rediffmail.com" , "Muskan@123", "ADIDAS ORIGINAL"},
-                {"muskanv01lko@gmail.com", "Mv@12345678", "ADIDAS ORIGINAL"},
+                {"muskanv01lko@gmail.com", "Mv@12345678", "ZARA COAT 3"},
                 {"example2001@gmail.com", "John@123", "ZARA COAT 3"}};
     }
 
