@@ -57,6 +57,12 @@
           <version>7.33.0</version>
           <scope>compile</scope>
       </dependency>
+      <!-- https://jarcasting.com/artifacts/mysql/mysql-connector-java/ -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.28</version>
+      </dependency>
   </dependencies>
 
 <!--    Each profile will have different .xml files -->
