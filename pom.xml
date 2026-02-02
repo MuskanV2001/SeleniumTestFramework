@@ -156,9 +156,9 @@
                             <artifactId>maven-surefire-plugin</artifactId>
                             <version>3.5.4</version>
                             <configuration>
-                                <includes>
-                                    <include>**/E2E_SubmitOrder_SQLData.java</include>
-                                </includes>
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>testSuites/testNGSQLData.xml</suiteXmlFile>
+                                </suiteXmlFiles>
                             </configuration>
                         </plugin>
                     </plugins>

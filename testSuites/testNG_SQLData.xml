@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="E2E_SubmitOrder_SQL">
+    <listeners>
+        <listener class-name="test.testComponents.Listeners"/>
+    </listeners>
+
+    <test name="E2E_SQL_Data" >
+        <classes>
+            <class name="test.tests.E2E_SubmitOrder_SQLdata"/>
+        </classes>
+    </test>
+</suite>
